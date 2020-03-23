@@ -20,6 +20,8 @@ Zu Beginn einfach
 Anschließend kann man minütlich via crontab `telekomLogin.sh` ausführen.
 Da als URL Ziel http://8.8.8.8 verwendet wird, schlägt dies bei bestehender Verbindung fehl und es wird kein erneuter Loginversuch vorgenommen (auf 8.8.8.8 lauscht kein Webserver auf Port 80, Stand 23.03.2020). Ist man ausgeloggt, wird diese Anfrage abgefangen und man anschließend eingeloggt.
 
+Manchmal kommt es vor, dass die Login-Seite nicht mehr kommt bzw. das Skript nicht funktioniert. Es lässt sich nicht einmal mehr der Login-Controller anpingen. Dieses Problem wurde auch bereits woanders beschrieben. Bei mir half es einfach eine andere MAC-Adresse zu verwenden und schon funktionierte alles wie es soll und ich war wieder online.
+
 PS: Stand 23.03.2020 funktioniert DNS-Tunneling mit iodine https://github.com/yarrick/iodine
 Damit ist es möglich auch ohne Backup-Internetverbindung auf den entfernten Raspberry-PI zuzugreifen, wenn sich das Login-Skript ändert. Leider erlauben nur wenige kostenlose DNS-Provider das setzen des hier benötigten NS-Eintrags. FreeDNS (https://freedns.afraid.org) ist eine positive Ausnahme. Wenn ihr mehr kennt, bitte einfach melden.
 
