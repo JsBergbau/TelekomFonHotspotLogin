@@ -1,6 +1,8 @@
 # TelekomFonHotspotLogin
 Dieses Skript vereinfacht das Login in einen Telekom-FON Hotspot. In diesem Fall gehen wir von einem 2. WLAN-Adapter aus und einer 2. Internetverbindung, über die man den PI Steuern kann. Das Skript kann aber genauso bei nur einer Internetverbindung verwendet werden.
 
+Tipp: Die Telekom Hotspot-Flat kann man kostenlos zu einem DSL-Anschluss der deutschen Telekom dazubuchen, auch wenn man keinen Speedport-Router hat. 
+
 Um das Problem mit dem Routing und mehreren Interfaces zu lösen, verwenden wir Policy-Routing. Hat man nur eine Internetverbindung, ist dieser Schritt nicht erforderlich
 `sudo nano /etc/iproute2/rt_tables`
 und am Ende 
