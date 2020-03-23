@@ -26,3 +26,9 @@ PS: Stand 23.03.2020 funktioniert DNS-Tunneling mit iodine https://github.com/ya
 Damit ist es möglich auch ohne Backup-Internetverbindung auf den entfernten Raspberry-PI zuzugreifen, wenn sich das Login-Skript ändert. Leider erlauben nur wenige kostenlose DNS-Provider das setzen des hier benötigten NS-Eintrags. FreeDNS (https://freedns.afraid.org) ist eine positive Ausnahme. Wenn ihr mehr kennt, bitte einfach melden.
 
 Der DNS-Tunnel ist allerdings extrem langsam. SSH lässt sich damit gerade so bedienen. Probiert es einfach aus. Für den Notfall kann es reichen.
+
+# Nützliche Infos
+Ausloggen geht (nur im Browser) via http://172.17.2.1:3990/logoff
+https://telekom.portal.fon.com Der direkte Aufruf, selbst im Hotspot erzeugt immer einen 404 Fehler. Das ist ganz normal. 
+
+
