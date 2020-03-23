@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$interface="wlan1" #Achtung unbedingt auch bei neueROute=manuell ändern 
+interface="wlan1" #Achtung unbedingt auch bei neueROute=manuell ändern 
 
 IP=$(ip addr show $interface | grep -Po 'inet \K[\d.]+')
 echo ip rule add from $IP table telekom
